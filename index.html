@@ -42,6 +42,7 @@
     .card-body button { width: 100%; padding: 8px; background: #e63946; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; margin-top: 10px; }
 
     .contact { padding: 40px; background: #f9f9f9; }
+    /* fixing the contact form responsiveness */
     .contact-inner { 
         width: 100%; 
         max-width: 800px; 
@@ -55,6 +56,37 @@
     footer { background: #1d1d1d; color: #ccc; padding: 24px 40px; font-size: 13px; display: flex; justify-content: space-between; }
 
     .fine-print { font-size: 11px; color: #999; margin-top: 4px; }
+    @media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
   </style>
 </head>
 <body>
